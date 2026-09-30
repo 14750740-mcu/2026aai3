@@ -1,0 +1,21 @@
+/// week04-2good.cpp Fun, C++
+// SOIT106_ADVANCE_012
+#include <iostream> 
+#include <vector>
+using namespace std;
+int main()
+{
+	vector<int> a;
+	int now;
+	for (int i=0; i<10; i++) {
+		cin >> now;
+		if (now==0) break;
+		a.push_back(now);
+	}
+	cin >> now;
+	int ans=0;
+	for (int num:a) {
+		if (num==now) ans++;
+	}
+	cout<<ans<<endl;
+}
